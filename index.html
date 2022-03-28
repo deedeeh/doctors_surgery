@@ -68,5 +68,69 @@
         allowfullscreen
       ></iframe>
     </article>
+    <section>
+      <h4>Need advice or have some feedback for us?</h4>
+      <p>
+        Send us a message by filling out the form below and one of our
+        Receptionists will be in touch:
+      </p>
+      <form>
+        <p>
+          Are you completing this form on behalf of:
+          <label>Yourself</label>
+          <input type="radio" name="fill_on_behalf_of" required />,
+          <label>Someone else</label>
+          <input type="radio" name="fill_on_behalf_of" required />
+        </p>
+        <p>
+          <label>
+            First Name:
+            <strong><abbr title="required">*</abbr></strong>
+          </label>
+          <input type="text" required />
+        </p>
+        <p>
+          <label>
+            Last Name:
+            <strong><abbr title="required">*</abbr></strong>
+          </label>
+          <input type="text" required />
+        </p>
+        <p>
+          <label>
+            Date of Birth:
+            <strong><abbr title="required">*</abbr></strong>
+          </label>
+          <input type="date" required />
+        </p>
+        <p>
+          <label>
+            Telephone:
+            <strong><abbr title="required">*</abbr></strong>
+          </label>
+          <input
+            type="tel"
+            placeholder="0777 7777 777"
+            pattern="[0-9]{4} [0-9]{4} [0-9]{3}"
+            required
+          />
+        </p>
+        <p>
+          <label>
+            Email:
+            <strong><abbr title="required">*</abbr></strong>
+          </label>
+          <input type="email" required />
+        </p>
+        <p>
+          <label
+            >Your query or message
+            <strong><abbr title="required">*</abbr></strong>
+          </label>
+          <textarea placeholder="your message" rows="4" cols="50"></textarea>
+        </p>
+        <button>Submit</button>
+      </form>
+    </section>
   </body>
 </html>
