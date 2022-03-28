@@ -59,10 +59,10 @@
     <article>
       <h4>How to use Ask My Doc?</h4>
       <iframe
-        width="500"
-        height="265"
+        width="560"
+        height="315"
         src="https://www.youtube.com/embed/sFzCh-HhaWo"
-        title="Ask my doc video guide"
+        title="YouTube video player"
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen
@@ -77,34 +77,44 @@
       <form>
         <p>
           Are you completing this form on behalf of:
-          <label>Yourself</label>
-          <input type="radio" name="fill_on_behalf_of" required />,
-          <label>Someone else</label>
-          <input type="radio" name="fill_on_behalf_of" required />
+          <label for="yourself">Yourself</label>
+          <input
+            type="radio"
+            name="fill_on_behalf_of"
+            id="yourself"
+            required
+          />,
+          <label for="someone_else">Someone else</label>
+          <input
+            type="radio"
+            name="fill_on_behalf_of"
+            id="someone_else"
+            required
+          />
         </p>
         <p>
-          <label>
+          <label for="first_name">
             First Name:
             <strong><abbr title="required">*</abbr></strong>
           </label>
-          <input type="text" required />
+          <input type="text" id="first_name" required />
         </p>
         <p>
-          <label>
+          <label for="last_name">
             Last Name:
             <strong><abbr title="required">*</abbr></strong>
           </label>
-          <input type="text" required />
+          <input type="text" id="last_name" required />
         </p>
         <p>
-          <label>
+          <label for="dob">
             Date of Birth:
             <strong><abbr title="required">*</abbr></strong>
           </label>
-          <input type="date" required />
+          <input type="date" id="dob" required />
         </p>
         <p>
-          <label>
+          <label for="telephone">
             Telephone:
             <strong><abbr title="required">*</abbr></strong>
           </label>
@@ -112,22 +122,28 @@
             type="tel"
             placeholder="0777 7777 777"
             pattern="[0-9]{4} [0-9]{4} [0-9]{3}"
+            id="telephone"
             required
           />
         </p>
         <p>
-          <label>
+          <label for="email">
             Email:
             <strong><abbr title="required">*</abbr></strong>
           </label>
-          <input type="email" required />
+          <input type="email" id="email" required />
         </p>
         <p>
-          <label>
+          <label for="message">
             Your query or message
             <strong><abbr title="required">*</abbr></strong>
           </label>
-          <textarea placeholder="your message" rows="4" cols="50"></textarea>
+          <textarea
+            id="message"
+            placeholder="your message"
+            rows="4"
+            cols="50"
+          ></textarea>
         </p>
         <button>Submit</button>
       </form>
